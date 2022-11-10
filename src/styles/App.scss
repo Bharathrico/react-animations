@@ -17,8 +17,12 @@ $compcolor:#FFAD38;
 
 .circle1
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: circleanim 1s ease ;
     transform: rotate(-20deg) scale(20);
+    overflow: visible;
 }
 
 @keyframes circleanim {
@@ -40,4 +44,18 @@ $compcolor:#FFAD38;
     color: $compcolor;
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.og-circle
+{
+    // stroke-dasharray: 252;
+    // stroke-dashoffset: 130;
+    // transform: rotate(50.3deg);
+    transition: all 0.4s ease;
+}
+
+.og-circle2
+{
+    transition: all ease 0.5s;
+    cursor: pointer;
 }

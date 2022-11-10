@@ -12,9 +12,13 @@
 }
 
 .circle1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -webkit-animation: circleanim 1s ease;
           animation: circleanim 1s ease;
   transform: rotate(-20deg) scale(20);
+  overflow: visible;
 }
 
 @-webkit-keyframes circleanim {
@@ -41,4 +45,13 @@
   color: #FFAD38;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.og-circle {
+  transition: all 0.4s ease;
+}
+
+.og-circle2 {
+  transition: all ease 0.5s;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
